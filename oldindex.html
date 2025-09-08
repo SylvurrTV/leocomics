@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="./img/pfp.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+  <title>Leoshortnose Comics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #6a3770;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Header Styles */
+header {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #6a3770;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/pfp.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px; /* Rounded rectangle with slightly rounded corners */
+  border: 3px solid pink;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-right: 20px; /* Space between the profile picture and title */
+}
+
+.profile-pic:hover {
+  transform: scale(1.1); /* Grow slightly */
+  box-shadow: 0 0 10px pink; /* Glow effect */
+}
+
+/* Header Title Styles */
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  text-shadow:
+    -1px -1px 0 #ff82c6,
+     1px -1px 0 #ff82c6,
+    -1px  1px 0 #ff82c6,
+     1px  1px 0 #ff82c6;
+  margin: 0;
+  text-align: center;
+}
+
+/* Underline for Header */
+.header-underline {
+  width: 60%;
+  height: 4px;
+  background-color: #ff82c6;
+  margin-top: 1rem; /* Move the underline down */
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0; /* Position it at the bottom of the header */
+}
+
+
+
+    /* Profile Link */
+    .profile-pic a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    /* Container for Comics */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    /* Comic Card Styles */
+    .comic {
+      margin-bottom: 3rem;
+    }
+
+    .comic-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Dosis', sans-serif;
+      color: #fff;
+      text-shadow:
+        -1px -1px 0 #ff82c6,
+         1px -1px 0 #ff82c6,
+        -1px  1px 0 #ff82c6,
+         1px  1px 0 #ff82c6;
+    }
+
+    .comic img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .comic-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .comic-date {
+      font-size: 1rem;
+      font-family: 'Dosis', sans-serif;
+      color: #fff;
+      text-shadow:
+        -1px -1px 0 #ff82c6,
+         1px -1px 0 #ff82c6,
+        -1px  1px 0 #ff82c6,
+         1px  1px 0 #ff82c6;
+    }
+
+    /* Dashed Divider for Comics */
+    .comic-divider {
+      margin: 2rem auto 0;
+      width: 60%;
+      height: 0;
+      border: none;
+      border-top: 3px dashed #ff82c6;
+      background-image: linear-gradient(to right, transparent 50%, #ff82c6 50%);
+      background-size: 20px 100%;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+      <a href="https://linktr.ee/leoshortnoseYT" target="_blank"></a>
+    </div>
+    <h1>Leoshortnose Comics</h1>
+    <div class="header-underline"></div>
+  </header>
+
+  <div class="container">
+    <div class="comic" id="bodiddley">
+      <div class="comic-header">
+        <div class="comic-title">Me when someone discovers Bo Diddley (I like bo diddley :3)</div>
+        <div class="comic-date">21/6/25</div>
+      </div>
+      <img src="./img/bodiddley.png" alt="Me when someone discovers Bo Diddley (I like bo diddley :3)" />
+      <div class="comic-divider"></div>
+    </div>
+
+  <div class="container">
+    <div class="comic" id="ceilingcat2">
+      <div class="comic-header">
+        <div class="comic-title">The Ceiling Cat #2</div>
+        <div class="comic-date">31/5/25</div>
+      </div>
+      <img src="./img/ceilingcat2.png" alt="Ceiling Cat 2" />
+      <div class="comic-divider"></div>
+    </div>
+
+  <div class="container">
+    <div class="comic" id="ceilingcat1">
+      <div class="comic-header">
+        <div class="comic-title">The Ceiling Cat #1</div>
+        <div class="comic-date">9/5/25</div>
+      </div>
+      <img src="./img/ceilingcat1.png" alt="Ceiling Cat 1" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="jessintrolily">
+      <div class="comic-header">
+        <div class="comic-title">Jess Introduces Lily!</div>
+        <div class="comic-date">28/3/25</div>
+      </div>
+      <img src="./img/41. Jess Introduces Lily! (28_3_25).png" alt="Jess Introduces Lily!" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="mangacomics">
+      <div class="comic-header">
+        <div class="comic-title">Difference Between Manga And Comics</div>
+        <div class="comic-date">2/2/25</div>
+      </div>
+      <img src="./img/40. Difference Between Manga And Comics (2_2_25).png" alt="Difference Between Manga And Comics" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="clownfish">
+      <div class="comic-header">
+        <div class="comic-title">If Humans Were Clownfish</div>
+        <div class="comic-date">16/1/25</div>
+      </div>
+      <img src="./img/39. If Humans Were Clownfish (16_1_25).png" alt="If Humans Were Clownfish" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="jessintro">
+      <div class="comic-header">
+        <div class="comic-title">Jessica Nakamura's Introduction</div>
+        <div class="comic-date">18/12/24</div>
+      </div>
+      <img src="./img/38. Jessica Nakamura_s Introduction _3 (18_12_24).png" alt="Jessica Nakamura's Introduction" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="2014v2024">
+      <div class="comic-header">
+        <div class="comic-title">2014 vs 2024</div>
+        <div class="comic-date">21/11/24</div>
+      </div>
+      <img src="./img/37. 2014 vs 2024 (21_11_24).png" alt="2014 vs 2024" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="mothsatadiner">
+      <div class="comic-header">
+        <div class="comic-title">Moths At A Diner</div>
+        <div class="comic-date">21/10/24</div>
+      </div>
+      <img src="./img/mothsatadiner.png" alt="Moths At A Diner" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="leilapride">
+      <div class="comic-header">
+        <div class="comic-title">Leila Wonder Loves Pride Month (and I do too!)</div>
+        <div class="comic-date">24/6/24</div>
+      </div>
+      <img src="./img/35. Leila Wonder Loves Pride Month (and I do too!) (24_6_24).png" alt="Leila Wonder Loves Pride Month (and I do too!)" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="rigelfarage">
+      <div class="comic-header">
+        <div class="comic-title">Rigel asking out Sunne</div>
+        <div class="comic-date">24/2/24</div>
+      </div>
+      <img src="./img/34. Rigel asking out Sunne (24_2_24).png" alt="Rigel asking out Sunne" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="brendacarla">
+      <div class="comic-header">
+        <div class="comic-title">Brenda and Carla's Conversations</div>
+        <div class="comic-date">24/1/24</div>
+      </div>
+      <img src="./img/33. Brenda and Carla_s Conversations (24_1_24).png" alt="Brenda and Carla's Conversations" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="hazeldrink">
+      <div class="comic-header">
+        <div class="comic-title">The Nowhere Lads: Hazel's Drinking Habits</div>
+        <div class="comic-date">17/1/24</div>
+      </div>
+      <img src="./img/32. The Nowhere Lads_ Hazel_s Drinking Habits (17_1_24).png" alt="The Nowhere Lads: Hazel's Drinking Habits" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="walrusslander">
+      <div class="comic-header">
+        <div class="comic-title">I Am The Walrus Slander</div>
+        <div class="comic-date">22/12/23</div>
+      </div>
+      <img src="./img/31. I Am The Walrus Slander (22_12_23).png" alt="I Am The Walrus Slander" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="leilawonderphone">
+      <div class="comic-header">
+        <div class="comic-title">How Leila Wonder Fixes A Phone</div>
+        <div class="comic-date">20/12/23</div>
+      </div>
+      <img src="./img/howleilawonderfixesaphone.png" alt="How Leila Wonder Fixes A Phone" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="timetravellor">
+      <div class="comic-header">
+        <div class="comic-title">Time Traveller</div>
+        <div class="comic-date">12/9/23</div>
+      </div>
+      <img src="./img/29. Time Traveller (12_9_23).png" alt="Time Traveller" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="freebooting">
+      <div class="comic-header">
+        <div class="comic-title">The Circle of Freebooting</div>
+        <div class="comic-date">8/9/23</div>
+      </div>
+      <img src="./img/28. The Circle of Freebooting (8_9_23).png" alt="The Circle of Freebooting" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="himalayas">
+      <div class="comic-header">
+        <div class="comic-title">How the Himalayas Formed</div>
+        <div class="comic-date">31/7/23</div>
+      </div>
+      <img src="./img/27. How the Himalayas Formed (31_7_23).png" alt="How the Himalayas Formed" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="goths">
+      <div class="comic-header">
+        <div class="comic-title">The Goths</div>
+        <div class="comic-date">5/7/23</div>
+      </div>
+      <img src="./img/26. The Goths (5_7_23).png" alt="The Goths" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="fourthwall">
+      <div class="comic-header">
+        <div class="comic-title">A Comic who is Aware of being a Comic</div>
+        <div class="comic-date">23/6/23</div>
+      </div>
+      <img src="./img/25. A Comic who is Aware of being a Comic (23_6_23).png" alt="A Comic who is Aware of being a Comic" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="doctor">
+      <div class="comic-header">
+        <div class="comic-title">How To Keep The Doctor Away</div>
+        <div class="comic-date">27/5/23</div>
+      </div>
+      <img src="./img/24. How to keep the doctor away (27_5_23).png" alt="How To Keep The Doctor Away" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="toothache">
+      <div class="comic-header">
+        <div class="comic-title">Toothache</div>
+        <div class="comic-date">7/5/23</div>
+      </div>
+      <img src="./img/23. Toothache (7_5_23).png" alt="Toothache" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="gullible">
+      <div class="comic-header">
+        <div class="comic-title">Gullible</div>
+        <div class="comic-date">6/5/23</div>
+      </div>
+      <img src="./img/22. Gullible (6_5_23).png" alt="Gullible" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="cavemen">
+      <div class="comic-header">
+        <div class="comic-title">How Cavemen dealt with Animals</div>
+        <div class="comic-date">4/5/23</div>
+      </div>
+      <img src="./img/21. How Cavemen dealt with Animals (4_5_23).png" alt="How Cavemen dealt with Animals" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="dinoextinct">
+      <div class="comic-header">
+        <div class="comic-title">The Day Dinosaurs went Extinct</div>
+        <div class="comic-date">1/5/23</div>
+      </div>
+      <img src="./img/20. The Day Dinosaurs went Extinct (1_5_23).png" alt="The Day Dinosaurs went Extinct" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="mugged">
+      <div class="comic-header">
+        <div class="comic-title">Mugged</div>
+        <div class="comic-date">28/4/23</div>
+      </div>
+      <img src="./img/19. Mugged (28_4_23).png" alt="Mugged" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="warrior">
+      <div class="comic-header">
+        <div class="comic-title">Warrior</div>
+        <div class="comic-date">21/4/23</div>
+      </div>
+      <img src="./img/18. Warrior (21_4_23).png" alt="Warrior" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="cannonball">
+      <div class="comic-header">
+        <div class="comic-title">Cannonball!</div>
+        <div class="comic-date">2/4/23</div>
+      </div>
+      <img src="./img/17. Cannonball! (2_4_23).png" alt="Cannonball!" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="brainsi2">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Social Interaction #2</div>
+        <div class="comic-date">10/2/23</div>
+      </div>
+      <img src="./img/16. The Brain Guys_ Social Interaction 2 (10_2_23).png" alt="The Brain Guys: Social Interaction #2" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="arizonaremake">
+      <div class="comic-header">
+        <div class="comic-title">Arizonian Weather (Remake)</div>
+        <div class="comic-date">13/9/22</div>
+      </div>
+      <img src="./img/15. Arizonian Weather (Remake) (13_9_22).png" alt="Arizonian Weather (Remake)" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="braininsomnia">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Insomnia</div>
+        <div class="comic-date">12/5/22</div>
+      </div>
+      <img src="./img/14. The Brain Guys_ Insomnia (12_5_22).png" alt="The Brain Guys: Insomnia" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="braincodered">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Code Red</div>
+        <div class="comic-date">9/8/21</div>
+      </div>
+      <img src="./img/13. The Brain Guys_ Code Red (9_8_21).png" alt="The Brain Guys: Code Red" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="thedoor3">
+      <div class="comic-header">
+        <div class="comic-title">The Door Part 3</div>
+        <div class="comic-date">10/6/21</div>
+      </div>
+      <img src="./img/12. The Door Part 3 (10_6_21).jpg" alt="The Door Part 3" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="thedoor2">
+      <div class="comic-header">
+        <div class="comic-title">The Door Part 2</div>
+        <div class="comic-date">10/6/21</div>
+      </div>
+      <img src="./img/11. The Door Part 2 (10_6_21).jpg" alt="The Door Part 2" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="thedoor1">
+      <div class="comic-header">
+        <div class="comic-title">The Door Part 1</div>
+        <div class="comic-date">14/4/21</div>
+      </div>
+      <img src="./img/10. The Door Part 1 (14_4_21).jpg" alt="The Door Part 1" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="silentp">
+      <div class="comic-header">
+        <div class="comic-title">The P is Silent</div>
+        <div class="comic-date">14/4/21</div>
+      </div>
+      <img src="./img/9. The P is Silent (14_4_21).png" alt="The P is Silent" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="brainrage">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Rage Gamer</div>
+        <div class="comic-date">29/3/21</div>
+      </div>
+      <img src="./img/8. The Brain Guys_ Rage Gamer (29_3_21).png" alt="The Brain Guys: Rage Gamer" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="brainsleep">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Sleeping</div>
+        <div class="comic-date">28/3/21</div>
+      </div>
+      <img src="./img/7. The Brain Guys_ Sleeping (28_3_21).png" alt="The Brain Guys: Sleeping" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="brainsi1">
+      <div class="comic-header">
+        <div class="comic-title">The Brain Guys: Social Interaction</div>
+        <div class="comic-date">26/3/21</div>
+      </div>
+      <img src="./img/6. The Brain Guys_ Social Interaction (26_3_21).png" alt="The Brain Guys: Social Interaction" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="kilimanjaro">
+      <div class="comic-header">
+        <div class="comic-title">Kilimanjaro</div>
+        <div class="comic-date">10/2/21</div>
+      </div>
+      <img src="./img/5. Kilimanjaro (10_2_21).jpg" alt="Kilimanjaro" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="fire">
+      <div class="comic-header">
+        <div class="comic-title">FIRE!!!</div>
+        <div class="comic-date">10/1/21</div>
+      </div>
+      <img src="./img/4. FIRE!!! (10_1_21).jpg" alt="FIRE!!!" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="sun">
+      <div class="comic-header">
+        <div class="comic-title">The Sun</div>
+        <div class="comic-date">9/1/21</div>
+      </div>
+      <img src="./img/3. The Sun (9_1_21).jpg" alt="The Sun" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="arizona">
+      <div class="comic-header">
+        <div class="comic-title">Arizonian Weather</div>
+        <div class="comic-date">1/12/19</div>
+      </div>
+      <img src="./img/2. Arizonian Weather (1_12_19).jpg" alt="Arizonian Weather" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <div class="comic" id="shutupjim">
+      <div class="comic-header">
+        <div class="comic-title">Jim Gets Fired</div>
+        <div class="comic-date">15/11/19</div>
+      </div>
+      <img src="./img/1. Jim Gets Fired (15_11_19).jpg" alt="Jim Gets Fired" />
+      <div class="comic-divider"></div>
+    </div>
+
+    <!-- Add more comics inside this div :3 or at the top i guess -->
+  </div>
+
+  <script>
+    window.addEventListener('hashchange', () => {
+      const targetId = location.hash.substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('load', () => {
+      const targetId = location.hash.substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
+
+</body>
+</html>
