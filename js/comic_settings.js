@@ -387,7 +387,7 @@ const pgData = [
 },
 {
     pgNum: 38,
-    title: `Jessica Nakamura's Introduction`,
+    title: `Jessica Nakamura - Jess's Intro`,
     date: writeDate(2024, 12, 18),
     altText: "Jessica Nakamura's Introduction",
     imageFiles: 1,
@@ -406,7 +406,7 @@ const pgData = [
 },
 {
     pgNum: 40,
-    title: `Difference Between Manga And Comics`,
+    title: `Jessica Nakamura - Difference Between Manga And Comics`,
     date: writeDate(2025, 2, 2),
     altText: "Difference Between Manga And Comics",
     imageFiles: 1,
@@ -416,7 +416,7 @@ const pgData = [
 },
 {
     pgNum: 41,
-    title: `Jess Introduces Lily!`,
+    title: `Jessica Nakamura - Jess Introduces Lily!`,
     date: writeDate(2025, 3, 28),
     altText: "Jess Introduces Lily!",
     imageFiles: 1,
@@ -426,7 +426,7 @@ const pgData = [
 },
 {
     pgNum: 42,
-    title: `The Ceiling Cat #1`,
+    title: `Jessica Nakamura - The Ceiling Cat #1`,
     date: writeDate(2025, 5, 9),
     altText: "The Ceiling Cat #1",
     imageFiles: 1,
@@ -436,7 +436,7 @@ const pgData = [
 },
 {
     pgNum: 43,
-    title: `The Ceiling Cat #2`,
+    title: `Jessica Nakamura - The Ceiling Cat #2`,
     date: writeDate(2025, 5, 31),
     altText: "The Ceiling Cat #2",
     imageFiles: 1,
