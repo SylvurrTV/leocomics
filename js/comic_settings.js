@@ -57,6 +57,16 @@ const pgData = [
             `,
     },
     {
+        pgNum: 47,
+        title: "Who Took My Juice?",
+        date: writeDate(2019, 11, 16),
+        altText: "Who Took My Juice?",
+        imageFiles: 1,
+        authorNotes: `
+        <p>Juice theft is a serious crime</p>
+            `,
+    },
+    {
         pgNum: 2,
         title: "Arizonian Weather",
         date: writeDate(2019, 12, 1),
