@@ -54,6 +54,7 @@ const pgData = [
         altText: "Jim Gets Fired!", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 1, //how many image files this page is split into
         authorNotes: `
+        <p>Must’ve been a bad employee to have that happen…</p>
             `,
     },
     {
@@ -63,6 +64,7 @@ const pgData = [
         altText: "Arizonian Weather",
         imageFiles: 1,
         authorNotes: `
+        <p>The sun just hits different over there, man.</p>
             `,
     },
     {
@@ -72,6 +74,7 @@ const pgData = [
         altText: "The Sun",
         imageFiles: 1,
         authorNotes: `
+        <p>Remember, kids: Don’t stare directly at the sun!</p>
             `,
     },
     {
@@ -81,6 +84,7 @@ const pgData = [
         altText: "FIRE!!!",
         imageFiles: 1,
         authorNotes: `
+        <p>haha subservion of expectaiton</p>
             `,
     },
     {
@@ -90,6 +94,7 @@ const pgData = [
         altText: "Kilimanjaro",
         imageFiles: 1,
         authorNotes: `
+        <p>Bet you didn’t know that… I didn’t know that when I made this comic T_T</p>
             `,
     },
     {
@@ -126,6 +131,7 @@ const pgData = [
     altText: "The P is Silent",
     imageFiles: 1,
     authorNotes: `
+    <p>Gotta be careful! The pterodactyls could be in the shitter…</p>
     `,
 },
 {
