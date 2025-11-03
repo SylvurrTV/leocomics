@@ -104,7 +104,8 @@ const pgData = [
         altText: "The Brain Guys: Social Interaction",
         imageFiles: 1,
         authorNotes: `
-            `,
+        <p>Introvert moment</p>
+        `,
     },
 {
     pgNum: 7,
@@ -113,6 +114,7 @@ const pgData = [
     altText: "The Brain Guys: Sleeping",
     imageFiles: 1,
     authorNotes: `
+    <p>Absolutely disgraceful acts by the... insomnia... creature? idk what he is...</p>
     `,
 },
 {
@@ -122,6 +124,7 @@ const pgData = [
     altText: "The Brain Guys: Rage Gamer",
     imageFiles: 1,
     authorNotes: `
+    <p>no talk me i angy</p>
     `,
 },
 {
@@ -141,6 +144,7 @@ const pgData = [
     altText: "The Door Part 1",
     imageFiles: 1,
     authorNotes: `
+    <p>W-where am I!? …hopefully I can find my way out…</p>
     `,
 },
 {
@@ -150,6 +154,7 @@ const pgData = [
     altText: "The Door Part 2",
     imageFiles: 1,
     authorNotes: `
+    <p>Now I’m at t-this CASTLE!?!!? also why tf is the door alive bro T_T</p>
     `,
 },
 {
@@ -159,6 +164,7 @@ const pgData = [
     altText: "The Door Part 3",
     imageFiles: 1,
     authorNotes: `
+    <p>YES I’VE MADE IT OUT… wait a second…</p>
     `,
 },
 {
@@ -168,6 +174,7 @@ const pgData = [
     altText: "The Brain Guys: Code Red",
     imageFiles: 1,
     authorNotes: `
+    <p>Based on real events! And a comic I made in 2018… I don’t have it anymore, unfortunately :c</p>
     `,
 },
 {
@@ -177,6 +184,7 @@ const pgData = [
     altText: "The Brain Guys: Insomnia",
     imageFiles: 1,
     authorNotes: `
+    <p>Insomnia suck ass, don’t it?</p>
     `,
 },
 {
@@ -186,6 +194,7 @@ const pgData = [
     altText: "Arizonian Weather (Remake)",
     imageFiles: 1,
     authorNotes: `
+    <p>The sun still hits different over there, girl…</p>
     `,
 },
 {
@@ -195,6 +204,7 @@ const pgData = [
     altText: "The Brain Guys: Social Interaction #2",
     imageFiles: 1,
     authorNotes: `
+    <p>(Sighs) …I hate that I made this. This is why I’m more aromantic these days…</p>
     `,
 },
 {
@@ -204,6 +214,7 @@ const pgData = [
     altText: "Cannonball!",
     imageFiles: 1,
     authorNotes: `
+    <p>Out he comes… boom!</p>
     `,
 },
 {
@@ -213,6 +224,7 @@ const pgData = [
     altText: "Warrior",
     imageFiles: 1,
     authorNotes: `
+    <p>Imagine if this is how wars were prevented</P
     `,
 },
 {
@@ -222,6 +234,7 @@ const pgData = [
     altText: "Mugged",
     imageFiles: 1,
     authorNotes: `
+    <p>Careful what you say in front of certain people!</p>
     `,
 },
 {
@@ -231,6 +244,7 @@ const pgData = [
     altText: "The Day Dinosaurs went Extinct",
     imageFiles: 1,
     authorNotes: `
+    <p>RIP</p>
     `,
 },
 {
@@ -240,6 +254,7 @@ const pgData = [
     altText: "How Cavemen dealt with Animals",
     imageFiles: 1,
     authorNotes: `
+    <p>This video was sponsored by RockVPN</p>
     `,
 },
 {
@@ -249,6 +264,7 @@ const pgData = [
     altText: "Gullible",
     imageFiles: 1,
     authorNotes: `
+    <p>there’s a card on the ceiling though!</p>
     `,
 },
 {
@@ -258,6 +274,7 @@ const pgData = [
     altText: "Toothache",
     imageFiles: 1,
     authorNotes: `
+    <p>Guess you could say that tooth has some wisdom? I’m sorry</p>
     `,
 },
 {
@@ -267,6 +284,7 @@ const pgData = [
     altText: "How To Keep The Doctor Away",
     imageFiles: 1,
     authorNotes: `
+    <p>Jazz apples are the best kind of apples. You should have some…</p>
     `,
 },
 {
@@ -276,6 +294,7 @@ const pgData = [
     altText: "A Comic who is Aware of being a Comic",
     imageFiles: 1,
     authorNotes: `
+    <p>Can’t have them getting out of the borders! >:3</p>
     `,
 },
 {
@@ -285,6 +304,7 @@ const pgData = [
     altText: "The Goths",
     imageFiles: 1,
     authorNotes: `
+    <p>mhm, truly wild day today</p>
     `,
 },
 {
@@ -304,6 +324,7 @@ const pgData = [
     altText: "The Circle of Freebooting",
     imageFiles: 1,
     authorNotes: `
+    <p>Based on some loser asking to buy my art as an NFT… this has happened a lot since I made this comic…</p>
     `,
 },
 {
@@ -313,6 +334,7 @@ const pgData = [
     altText: "Time Traveller",
     imageFiles: 1,
     authorNotes: `
+    <p>waow art style blend o.o</p>
     `,
 },
 {
@@ -342,6 +364,7 @@ const pgData = [
     altText: "The Nowhere Lads: Hazel's Drinking Habits",
     imageFiles: 1,
     authorNotes: `
+    <p>Girl likes her drinks, don’t she?</p>
     `,
 },
 {
@@ -361,6 +384,7 @@ const pgData = [
     altText: "Rigel asking out Sunne",
     imageFiles: 1,
     authorNotes: `
+    <p>Rigel ain’t got no rizz… I’m in crippling debt.</p>
     `,
 },
 {
@@ -380,6 +404,7 @@ const pgData = [
     altText: "Moths At A Diner",
     imageFiles: 1,
     authorNotes: `
+    <p>Poor Jerry… he just wanted synthetic fabric for once!</p>
     `,
 },
 {
@@ -389,6 +414,7 @@ const pgData = [
     altText: "2014 vs 2024",
     imageFiles: 1,
     authorNotes: `
+    <p>depression moment :)</p>
     `,
 },
 {
@@ -408,6 +434,7 @@ const pgData = [
     altText: "If Humans Were Clownfish",
     imageFiles: 1,
     authorNotes: `
+    <p>imagine if trans peepl had this power :O</p>
     `,
 },
 {
