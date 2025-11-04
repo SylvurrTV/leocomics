@@ -339,9 +339,9 @@ const pgData = [
 },
 {
     pgNum: 30,
-    title: `How Leila Wonder Fixes A Phone`,
+    title: `Here We Go Again! - How Leila Wonder Fixes A Phone`,
     date: writeDate(2023, 12, 20),
-    altText: "How Leila Wonder Fixes A Phone",
+    altText: "Here We Go Again! - How Leila Wonder Fixes A Phone",
     imageFiles: 1,
     authorNotes: `
     <p>When in doubt, Leila can fix it :D</p>
@@ -359,9 +359,9 @@ const pgData = [
 },
 {
     pgNum: 32,
-    title: `The Nowhere Lads: Hazel's Drinking Habits`,
+    title: `The Nowhere Lads - Hazel's Drinking Habits`,
     date: writeDate(2024, 1, 17),
-    altText: "The Nowhere Lads: Hazel's Drinking Habits",
+    altText: "The Nowhere Lads - Hazel's Drinking Habits",
     imageFiles: 1,
     authorNotes: `
     <p>Girl likes her drinks, don’t she?</p>
@@ -369,9 +369,9 @@ const pgData = [
 },
 {
     pgNum: 33,
-    title: `Brenda and Carla's Conversations`,
+    title: `Here We Go Again! - Brenda and Carla's Conversations`,
     date: writeDate(2024, 1, 24),
-    altText: "Brenda and Carla's Conversations",
+    altText: "Here We Go Again! - Brenda and Carla's Conversations",
     imageFiles: 1,
     authorNotes: `
     <p>This applies to any lesbian couple, really.</p>
@@ -389,9 +389,9 @@ const pgData = [
 },
 {
     pgNum: 35,
-    title: `Leila Wonder Loves Pride Month (and I do too!)`,
+    title: `Here We Go Again! - Leila Wonder Loves Pride Month (and I do too!)`,
     date: writeDate(2024, 6, 24),
-    altText: "Leila Wonder Loves Pride Month (and I do too!)",
+    altText: "Here We Go Again! - Leila Wonder Loves Pride Month (and I do too!)",
     imageFiles: 1,
     authorNotes: `
     <p>if ur LGBTQ and its pride month, Leila will support you :3</p>
@@ -539,9 +539,9 @@ const pgData = [
 },
 {
     pgNum: 50,
-    title: `Grace's Treehouse`,
+    title: `Here We Go Again! - Grace's Treehouse`,
     date: writeDate(2025, 11, 4),
-    altText: "Grace's Treehouse",
+    altText: "Here We Go Again! - Grace's Treehouse",
     imageFiles: 1,
     authorNotes: `
     <p>Can’t argue with a girl literally producing chlorophyll in her hair lol.</p>
