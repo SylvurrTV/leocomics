@@ -558,7 +558,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 51,
+    pgNum: 52,
     title: `History Essentially - Adam & Eve (7000 BCE)`,
     date: writeDate(2025, 11, 10),
     altText: "History Essentially - Adam & Eve (7000 BCE)",
