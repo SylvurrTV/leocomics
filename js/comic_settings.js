@@ -576,6 +576,7 @@ const pgData = [
     authorNotes: `
     <p>Must still have been a bad employee to have that happen AGAIN…</p>
     `,
+}
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
