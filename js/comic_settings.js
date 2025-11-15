@@ -566,7 +566,16 @@ const pgData = [
     authorNotes: `
     <p>Tbf, apples are so good, how could Eve not resist munching on it? :3</p>
     `,
-}
+},
+{
+    pgNum: 53,
+    title: `Jim Gets Fired (again)`,
+    date: writeDate(2025, 11, 15),
+    altText: "Jim Gets Fired (again)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Must still have been a bad employee to have that happen AGAIN… also, this is a remake of my first comic (I still have), which was made 6 years ago today :0 sooo HAPPY ANNIVERSARYYY >W<</p>
+    `,
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
