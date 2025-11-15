@@ -574,7 +574,7 @@ const pgData = [
     altText: "Jim Gets Fired (again)",
     imageFiles: 1,
     authorNotes: `
-    <p>Must still have been a bad employee to have that happen AGAIN… also, this is a remake of my first comic (I still have), which was made 6 years ago today :0 sooo HAPPY ANNIVERSARYYY >W<</p>
+    <p>Must still have been a bad employee to have that happen AGAIN…</p>
     `,
 ];
 
