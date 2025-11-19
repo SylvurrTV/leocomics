@@ -587,7 +587,7 @@ const pgData = [
     <p>tiresias gets funny ikea shark hilarity ensues</p>
     `,
 },
-    {
+{
     pgNum: 55,
     title: `Green Pen (Bonus Comic)`,
     date: writeDate(2025, 11, 19),
