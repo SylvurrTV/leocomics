@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 56; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 57; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -605,6 +605,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Satan sitting there, she’s smiling, booping my nose more and more. Oh, no, no, please, God, help me!</p>
+    `,
+},
+{
+    pgNum: 57,
+    title: `Here We Go Again! - Leila's Blood Test (TW: Syringes, Blood)`,
+    date: writeDate(2025, 11, 22),
+    altText: "Here We Go Again! - Leila's Blood Test (TW: Syringes, Blood)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Of course, in actuality, pink blood is most likely from infections or periods (or both), but in this universe, unnatural colours for things is kinda the norm, and blood is no exception >:3</p>
     `,
 }
 ];
