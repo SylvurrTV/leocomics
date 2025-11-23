@@ -589,9 +589,9 @@ const pgData = [
 },
 {
     pgNum: 55,
-    title: `Green Pen (Bonus Comic)`,
+    title: `Green Pen`,
     date: writeDate(2025, 11, 19),
-    altText: "Green Pen (Bonus Comic)",
+    altText: "Green Pen",
     imageFiles: 1,
     authorNotes: `
     <p>sry for no comic yesterday, I made this in college like a minute ago, I’ll make a proper one later</p>
