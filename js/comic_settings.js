@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 57; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 58; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -615,6 +615,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Of course, in actuality, pink blood is most likely from infections or periods (or both), but in this universe, unnatural colours for things is kinda the norm, and blood is no exception >:3</p>
+    `,
+},
+{
+    pgNum: 58,
+    title: `History Essentially - Emu War (1932)`,
+    date: writeDate(2025, 11, 23),
+    altText: "History Essentially - Emu War (1932)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Imagine the PTSD the veterans of this war must’ve gotten… even though it wasn’t even a war</p>
     `,
 }
 ];
