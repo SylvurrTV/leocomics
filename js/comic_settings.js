@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 58; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 59; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -625,6 +625,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Imagine the PTSD the veterans of this war must’ve gotten… even though it wasn’t even a war</p>
+    `,
+},
+{
+    pgNum: 59,
+    title: `Jessica Nakamura and Pals - Jess's Enemy`,
+    date: writeDate(2025, 11, 24),
+    altText: "Jessica Nakamura and Pals - Jess's Enemy",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Introducing Cyrus Rains, a 23-year-old bounty hunter who has been in the biz since they were 17, capturing the likes of the Zodiac Killer, the Loch Ness Monster, the guy who asked, etc</p>
     `,
 }
 ];
