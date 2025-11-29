@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 59; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 60; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -635,6 +635,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Introducing Cyrus Rains, a 23-year-old bounty hunter who has been in the biz since they were 17, capturing the likes of the Zodiac Killer, the Loch Ness Monster, the guy who asked, etc</p>
+    `,
+},
+{
+    pgNum: 60,
+    title: `History Essentially - Marco Polo (1275 CE)`,
+    date: writeDate(2025, 11, 28),
+    altText: "History Essentially - Marco Polo (1275 CE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Based on an actual thing from Chinese mythology T_T I specifically looked up the weirdest creatures from it lol</p>
     `,
 }
 ];
