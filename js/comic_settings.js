@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 61; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 62; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -655,6 +655,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Introducing Mika Merlin, Dani-chan’s little gremlin troublemaker. But despite that… you can’t hate the little booger!! :3 He's too cuteee >w<</p>
+    `,
+},
+{
+    pgNum: 61,
+    title: `Final Comic of November`,
+    date: writeDate(2025, 11, 30),
+    altText: "Final Comic of November",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Despite being super busy with college this month, it’s been quite fun to make all these comics ^_^ I’ll probably do this again next year, but we’ll see.</p>
     `,
 }
 ];
