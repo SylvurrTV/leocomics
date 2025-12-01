@@ -658,7 +658,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 61,
+    pgNum: 62,
     title: `Final Comic of November`,
     date: writeDate(2025, 11, 30),
     altText: "Final Comic of November",
