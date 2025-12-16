@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 62; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 63; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -665,6 +665,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Despite being super busy with college this month, it’s been quite fun to make all these comics ^_^ I’ll probably do this again next year, but we’ll see.</p>
+    `,
+},
+{
+    pgNum: 63,
+    title: `Here We Go Again! - Christmas Party`,
+    date: writeDate(2025, 12, 16),
+    altText: "Here We Go Again! - Christmas Party",
+    imageFiles: 1,
+    authorNotes: `
+    <p>A very drunk couple, a girl hallucinating elves, and a ferret interacting with a possibly demonic shadow entity... you know... typical Christmas party stuff!</p>
     `,
 }
 ];
