@@ -676,6 +676,18 @@ const pgData = [
     authorNotes: `
     <p>A very drunk couple, a girl hallucinating elves, and a ferret interacting with a possibly demonic shadow entity... you know... typical Christmas party stuff!</p>
     `,
+},
+{
+    pgNum: 64,
+    title: `History Essentially - St. Nicholas (300 CE)`,
+    date: writeDate(2025, 12, 23),
+    altText: "History Essentially - St. Nicholas (300 CE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>This is based on an actual dream St. Nick (allegedly) had where he was a detective, investigating the murder of three boys, and it turns out they were in a vat of pickled foods and (possibly) picked themselves... what a fun, wholesome Christmas fact :3
+
+</p>
+    `,
 }
 ];
 
