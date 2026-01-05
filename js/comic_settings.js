@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 64; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 65; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -684,11 +684,18 @@ const pgData = [
     altText: "History Essentially - St. Nicholas (300 CE)",
     imageFiles: 1,
     authorNotes: `
-    <p>This is based on an actual dream St. Nick (allegedly) had where he was a detective, investigating the murder of three boys, and it turns out they were in a vat of pickled foods and (possibly) picked themselves... what a fun, wholesome Christmas fact :3
-
-</p>
+    <p>This is based on an actual dream St. Nick (allegedly) had where he was a detective, investigating the murder of three boys, and it turns out they were in a vat of pickled foods and (possibly) picked themselves... what a fun, wholesome Christmas fact :3<p>
     `,
-}
+},
+{
+    pgNum: 65,
+    title: `History Essentially - Ea-Nāsir (1811 BCE)`,
+    date: writeDate(2026, 1, 5),
+    altText: "History Essentially - Ea-Nāsir (1811 BCE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>It's been 4 thousand years, and Nanni's still not recieved his refund. So sad ;w;<p>
+    `,
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
