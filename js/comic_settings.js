@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 68; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 69; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -725,6 +725,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Idk if Kiki or a literal catgirl with a knife are more dangerous. Can't decide.<p>
+    `,
+ },   
+ {
+    pgNum: 69,
+    title: `History Essentially - Easter (33 CE)`,
+    date: writeDate(2026, 4, 5),
+    altText: "History Essentially - Easter (33 CE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>I sincerely have no idea how a man resurrecting and flying to Heaven has any correlation with chocolate eggs. Maybe Jesus was served some when he arrived idk. Also, I feel I overdid it with the airbrush on this one lol. It still looks fine, tho, sooooo.<p>
     `,
  }
 ];
