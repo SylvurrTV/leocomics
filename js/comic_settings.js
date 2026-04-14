@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 69; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 70; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -735,6 +735,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>I sincerely have no idea how a man resurrecting and flying to Heaven has any correlation with chocolate eggs. Maybe Jesus was served some when he arrived idk. Also, I feel I overdid it with the airbrush on this one lol. It still looks fine, tho, sooooo.<p>
+    `,
+ },   
+ {
+    pgNum: 70,
+    title: `History Essentially - Dinosaurs (100,000,000 BCE)`,
+    date: writeDate(2026, 4, 5),
+    altText: "History Essentially - Dinosaurs (100,000,000 BCE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>I think I'm stretching the definition of history... but who cares >:3 dinosaurs are cool af<p>
     `,
  }
 ];
