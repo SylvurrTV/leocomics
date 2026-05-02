@@ -746,7 +746,16 @@ const pgData = [
     authorNotes: `
     <p>I think I'm stretching the definition of history... but who cares >:3 dinosaurs are cool af<p>
     `,
- }
+ },   
+ {
+    pgNum: 71,
+    title: `Here We Go Again! - Maya's Brownies`,
+    date: writeDate(2026, 5, 2),
+    altText: "Here We Go Again! - Maya's Brownies",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Brenda was well and truly horrified, since she prides herself in being a clean girl. Don’t worry, she was quick to forgive Maya since it wasn’t her fault… though she has started labelling her brownies, just in case!<p>
+    `,
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
