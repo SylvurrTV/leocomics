@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 72; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 73; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -58,7 +58,17 @@ const pgData = [
             `,
     },
     {
-        pgNum: 2,
+        pgNum: 2, //what page number it is
+        title: "Who Took My Juice?", //the title of the page (leaving this blank will default it to "Page X")
+        date: writeDate(2019, 11, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        altText: "Who Took My Juice?", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
+        imageFiles: 1, //how many image files this page is split into
+        authorNotes: `
+        <p>Got what he deserved, honestly >:c</p>
+            `,
+    },
+    {
+        pgNum: 3,
         title: "Arizonian Weather",
         date: writeDate(2019, 12, 1),
         altText: "Arizonian Weather",
@@ -68,7 +78,7 @@ const pgData = [
             `,
     },
     {
-        pgNum: 3,
+        pgNum: 4,
         title: "The Sun",
         date: writeDate(2021, 1, 9),
         altText: "The Sun",
@@ -78,7 +88,7 @@ const pgData = [
             `,
     },
     {
-        pgNum: 4,
+        pgNum: 5,
         title: "FIRE!!!",
         date: writeDate(2021, 1, 10),
         altText: "FIRE!!!",
@@ -88,7 +98,7 @@ const pgData = [
             `,
     },
     {
-        pgNum: 5,
+        pgNum: 6,
         title: "Kilimanjaro",
         date: writeDate(2021, 2, 10),
         altText: "Kilimanjaro",
@@ -98,7 +108,7 @@ const pgData = [
             `,
     },
     {
-        pgNum: 6,
+        pgNum: 7,
         title: `The Brain Guys: Social Interaction`,
         date: writeDate(2021, 3, 26),
         altText: "The Brain Guys: Social Interaction",
@@ -108,7 +118,7 @@ const pgData = [
         `,
     },
 {
-    pgNum: 7,
+    pgNum: 8,
     title: `The Brain Guys: Sleeping`,
     date: writeDate(2021, 3, 28),
     altText: "The Brain Guys: Sleeping",
@@ -118,7 +128,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 8,
+    pgNum: 9,
     title: `The Brain Guys: Rage Gamer`,
     date: writeDate(2021, 3, 29),
     altText: "The Brain Guys: Rage Gamer",
@@ -128,7 +138,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 9,
+    pgNum: 10,
     title: `The P is Silent`,
     date: writeDate(2021, 4, 14),
     altText: "The P is Silent",
@@ -138,7 +148,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 10,
+    pgNum: 11,
     title: `The Door Part 1`,
     date: writeDate(2021, 4, 14),
     altText: "The Door Part 1",
@@ -148,7 +158,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 11,
+    pgNum: 12,
     title: `The Door Part 2`,
     date: writeDate(2021, 6, 10),
     altText: "The Door Part 2",
@@ -158,7 +168,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 12,
+    pgNum: 13,
     title: `The Door Part 3`,
     date: writeDate(2021, 6, 10),
     altText: "The Door Part 3",
@@ -168,7 +178,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 13,
+    pgNum: 14,
     title: `The Brain Guys: Code Red`,
     date: writeDate(2021, 8, 9),
     altText: "The Brain Guys: Code Red",
@@ -178,7 +188,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 14,
+    pgNum: 15,
     title: `The Brain Guys: Insomnia`,
     date: writeDate(2022, 5, 12),
     altText: "The Brain Guys: Insomnia",
@@ -188,7 +198,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 15,
+    pgNum: 16,
     title: `Arizonian Weather (Remake)`,
     date: writeDate(2022, 9, 13),
     altText: "Arizonian Weather (Remake)",
@@ -198,7 +208,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 16,
+    pgNum: 17,
     title: `The Brain Guys: Social Interaction #2`,
     date: writeDate(2023, 2, 10),
     altText: "The Brain Guys: Social Interaction #2",
@@ -208,7 +218,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 17,
+    pgNum: 18,
     title: `Cannonball!`,
     date: writeDate(2023, 4, 2),
     altText: "Cannonball!",
@@ -218,7 +228,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 18,
+    pgNum: 19,
     title: `Warrior`,
     date: writeDate(2023, 4, 21),
     altText: "Warrior",
@@ -228,7 +238,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 19,
+    pgNum: 20,
     title: `Mugged`,
     date: writeDate(2023, 4, 28),
     altText: "Mugged",
@@ -238,7 +248,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 20,
+    pgNum: 21,
     title: `The Day Dinosaurs went Extinct`,
     date: writeDate(2023, 5, 1),
     altText: "The Day Dinosaurs went Extinct",
@@ -248,7 +258,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 21,
+    pgNum: 22,
     title: `How Cavemen dealt with Animals`,
     date: writeDate(2023, 5, 4),
     altText: "How Cavemen dealt with Animals",
@@ -258,7 +268,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 22,
+    pgNum: 23,
     title: `Gullible`,
     date: writeDate(2023, 5, 6),
     altText: "Gullible",
@@ -268,7 +278,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 23,
+    pgNum: 24,
     title: `Toothache`,
     date: writeDate(2023, 5, 7),
     altText: "Toothache",
@@ -278,7 +288,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 24,
+    pgNum: 25,
     title: `How To Keep The Doctor Away`,
     date: writeDate(2023, 5, 27),
     altText: "How To Keep The Doctor Away",
@@ -288,7 +298,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 25,
+    pgNum: 26,
     title: `A Comic who is Aware of being a Comic`,
     date: writeDate(2023, 6, 23),
     altText: "A Comic who is Aware of being a Comic",
@@ -298,7 +308,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 26,
+    pgNum: 27,
     title: `The Goths`,
     date: writeDate(2023, 7, 5),
     altText: "The Goths",
@@ -308,7 +318,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 27,
+    pgNum: 28,
     title: `How the Himalayas Formed`,
     date: writeDate(2023, 7, 31),
     altText: "How the Himalayas Formed",
@@ -318,7 +328,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 28,
+    pgNum: 29,
     title: `The Circle of Freebooting`,
     date: writeDate(2023, 9, 8),
     altText: "The Circle of Freebooting",
@@ -328,7 +338,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 29,
+    pgNum: 30,
     title: `Time Traveller`,
     date: writeDate(2023, 9, 12),
     altText: "Time Traveller",
@@ -338,7 +348,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 30,
+    pgNum: 31,
     title: `Here We Go Again! - How Leila Wonder Fixes A Phone`,
     date: writeDate(2023, 12, 20),
     altText: "Here We Go Again! - How Leila Wonder Fixes A Phone",
@@ -348,7 +358,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 31,
+    pgNum: 32,
     title: `I Am The Walrus Slander`,
     date: writeDate(2023, 12, 22),
     altText: "I Am The Walrus Slander",
@@ -358,7 +368,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 32,
+    pgNum: 33,
     title: `The Nowhere Lads - Hazel's Drinking Habits`,
     date: writeDate(2024, 1, 17),
     altText: "The Nowhere Lads - Hazel's Drinking Habits",
@@ -368,7 +378,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 33,
+    pgNum: 34,
     title: `Here We Go Again! - Brenda and Carla's Conversations`,
     date: writeDate(2024, 1, 24),
     altText: "Here We Go Again! - Brenda and Carla's Conversations",
@@ -378,7 +388,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 34,
+    pgNum: 35,
     title: `Rigel asking out Sunne`,
     date: writeDate(2024, 2, 24),
     altText: "Rigel asking out Sunne",
@@ -388,7 +398,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 35,
+    pgNum: 36,
     title: `Here We Go Again! - Leila Wonder Loves Pride Month (and I do too!)`,
     date: writeDate(2024, 6, 24),
     altText: "Here We Go Again! - Leila Wonder Loves Pride Month (and I do too!)",
@@ -398,7 +408,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 36,
+    pgNum: 37,
     title: `Moths At A Diner`,
     date: writeDate(2024, 10, 21),
     altText: "Moths At A Diner",
@@ -408,7 +418,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 37,
+    pgNum: 38,
     title: `2014 vs 2024`,
     date: writeDate(2024, 11, 21),
     altText: "2014 vs 2024",
@@ -418,7 +428,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 38,
+    pgNum: 39,
     title: `Jessica Nakamura - Jess's Intro`,
     date: writeDate(2024, 12, 18),
     altText: "Jessica Nakamura's Introduction",
@@ -428,7 +438,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 39,
+    pgNum: 40,
     title: `If Humans Were Clownfish`,
     date: writeDate(2025, 1, 16),
     altText: "If Humans Were Clownfish",
@@ -438,7 +448,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 40,
+    pgNum: 41,
     title: `Jessica Nakamura - Difference Between Manga And Comics`,
     date: writeDate(2025, 2, 2),
     altText: "Difference Between Manga And Comics",
@@ -448,7 +458,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 41,
+    pgNum: 42,
     title: `Jessica Nakamura - Jess Introduces Lily!`,
     date: writeDate(2025, 3, 28),
     altText: "Jess Introduces Lily!",
@@ -458,7 +468,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 42,
+    pgNum: 43,
     title: `Jessica Nakamura - The Ceiling Cat #1`,
     date: writeDate(2025, 5, 9),
     altText: "The Ceiling Cat #1",
@@ -468,7 +478,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 43,
+    pgNum: 44,
     title: `Jessica Nakamura - The Ceiling Cat #2`,
     date: writeDate(2025, 5, 31),
     altText: "The Ceiling Cat #2",
@@ -478,7 +488,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 44,
+    pgNum: 45,
     title: `Me when someone discovers Bo Diddley (I like bo diddley :3)`,
     date: writeDate(2025, 6, 21),
     altText: "Me when someone discovers Bo Diddley (I like bo diddley :3)",
@@ -488,7 +498,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 45,
+    pgNum: 46,
     title: `History Essentially - The First Selfie (1830 CE)`,
     date: writeDate(2025, 9, 5),
     altText: "History Essentially - The First Selfie (1830 CE)",
@@ -498,7 +508,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 46,
+    pgNum: 47,
     title: `Jessica Nakamura - The Kiki Box`,
     date: writeDate(2025, 10, 19),
     altText: "Jessica Nakamura - The Kiki Box",
@@ -508,7 +518,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 47,
+    pgNum: 48,
     title: `History Essentially - Ötzi The Iceman (5000 BCE)`,
     date: writeDate(2025, 10, 25),
     altText: "History Essentially - Ötzi The Iceman (5000 BCE)",
@@ -518,7 +528,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 48,
+    pgNum: 49,
     title: `Me After Halloween`,
     date: writeDate(2025, 11, 1),
     altText: "Me After Halloween",
@@ -528,7 +538,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 49,
+    pgNum: 50,
     title: `Something That Happened To Me Yesterday`,
     date: writeDate(2025, 11, 3),
     altText: "Something That Happened To Me Yesterday",
@@ -538,7 +548,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 50,
+    pgNum: 51,
     title: `Here We Go Again! - Grace's Treehouse`,
     date: writeDate(2025, 11, 4),
     altText: "Here We Go Again! - Grace's Treehouse",
@@ -548,7 +558,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 51,
+    pgNum: 52,
     title: `History Essentially - Woodstock (1969)`,
     date: writeDate(2025, 11, 7),
     altText: "History Essentially - Woodstock (1969)",
@@ -558,7 +568,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 52,
+    pgNum: 53,
     title: `History Essentially - Adam & Eve (7000 BCE)`,
     date: writeDate(2025, 11, 10),
     altText: "History Essentially - Adam & Eve (7000 BCE)",
@@ -568,7 +578,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 53,
+    pgNum: 54,
     title: `Jim Gets Fired (again)`,
     date: writeDate(2025, 11, 15),
     altText: "Jim Gets Fired (again)",
@@ -578,7 +588,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 54,
+    pgNum: 55,
     title: `History Essentially - Tiresias (500 BCE)`,
     date: writeDate(2025, 11, 17),
     altText: "History Essentially - Tiresias (500 BCE)",
@@ -588,7 +598,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 55,
+    pgNum: 56,
     title: `Green Pen`,
     date: writeDate(2025, 11, 19),
     altText: "Green Pen",
@@ -598,7 +608,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 56,
+    pgNum: 57,
     title: `Catgirl Satan`,
     date: writeDate(2025, 11, 20),
     altText: "Catgirl Satan",
@@ -608,7 +618,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 57,
+    pgNum: 58,
     title: `Here We Go Again! - Leila's Blood Test (TW: Syringes, Blood)`,
     date: writeDate(2025, 11, 22),
     altText: "Here We Go Again! - Leila's Blood Test (TW: Syringes, Blood)",
@@ -618,7 +628,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 58,
+    pgNum: 59,
     title: `History Essentially - Emu War (1932)`,
     date: writeDate(2025, 11, 23),
     altText: "History Essentially - Emu War (1932)",
@@ -628,7 +638,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 59,
+    pgNum: 60,
     title: `Jessica Nakamura and Pals - Jess's Enemy`,
     date: writeDate(2025, 11, 24),
     altText: "Jessica Nakamura and Pals - Jess's Enemy",
@@ -638,7 +648,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 60,
+    pgNum: 61,
     title: `History Essentially - Marco Polo (1275 CE)`,
     date: writeDate(2025, 11, 28),
     altText: "History Essentially - Marco Polo (1275 CE)",
@@ -648,7 +658,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 61,
+    pgNum: 62,
     title: `Jessica Nakamura & Pals - Mika Merlin`,
     date: writeDate(2025, 11, 29),
     altText: "Jessica Nakamura & Pals - Mika Merlin",
@@ -658,7 +668,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 62,
+    pgNum: 63,
     title: `Final Comic of November`,
     date: writeDate(2025, 11, 30),
     altText: "Final Comic of November",
@@ -668,7 +678,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 63,
+    pgNum: 64,
     title: `Here We Go Again! - Christmas Party`,
     date: writeDate(2025, 12, 16),
     altText: "Here We Go Again! - Christmas Party",
@@ -678,7 +688,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 64,
+    pgNum: 65,
     title: `History Essentially - St. Nicholas (300 CE)`,
     date: writeDate(2025, 12, 23),
     altText: "History Essentially - St. Nicholas (300 CE)",
@@ -688,7 +698,7 @@ const pgData = [
     `,
 },
 {
-    pgNum: 65,
+    pgNum: 66,
     title: `History Essentially - Ea-Nāsir (1811 BCE)`,
     date: writeDate(2026, 1, 5),
     altText: "History Essentially - Ea-Nāsir (1811 BCE)",
@@ -698,7 +708,7 @@ const pgData = [
     `,
  },
 {
-    pgNum: 66,
+    pgNum: 67,
     title: `Gangly (thats an in-joke, ya know)`,
     date: writeDate(2026, 1, 23),
     altText: "Gangly (thats an in-joke, ya know)",
@@ -708,7 +718,7 @@ const pgData = [
     `,
 },   
 {
-    pgNum: 67,
+    pgNum: 68,
     title: `History Essentially - Bastet (3000 BCE)`,
     date: writeDate(2026, 2, 7),
     altText: "History Essentially - Bastet (3000 BCE)",
@@ -718,7 +728,7 @@ const pgData = [
     `,
  },   
  {
-    pgNum: 68,
+    pgNum: 69,
     title: `Jessica Nakamura & Pals - The Wild Catgirl`,
     date: writeDate(2026, 3, 30),
     altText: "Jessica Nakamura & Pals - The Wild Catgirl",
@@ -728,7 +738,7 @@ const pgData = [
     `,
  },   
  {
-    pgNum: 69,
+    pgNum: 70,
     title: `History Essentially - Easter (33 CE)`,
     date: writeDate(2026, 4, 5),
     altText: "History Essentially - Easter (33 CE)",
@@ -738,7 +748,7 @@ const pgData = [
     `,
  },   
  {
-    pgNum: 70,
+    pgNum: 71,
     title: `History Essentially - Dinosaurs (100,000,000 BCE)`,
     date: writeDate(2026, 4, 5),
     altText: "History Essentially - Dinosaurs (100,000,000 BCE)",
@@ -748,7 +758,7 @@ const pgData = [
     `,
  },   
  {
-    pgNum: 71,
+    pgNum: 72,
     title: `Here We Go Again! - Maya's Brownies`,
     date: writeDate(2026, 5, 2),
     altText: "Here We Go Again! - Maya's Brownies",
@@ -758,7 +768,7 @@ const pgData = [
     `,
  },   
  {
-    pgNum: 72,
+    pgNum: 73,
     title: `Dark Mode`,
     date: writeDate(2026, 5, 4),
     altText: "Dark Mode",
