@@ -786,6 +786,7 @@ const pgData = [
     authorNotes: `
     <p>nuts how mansa musa was technically the first hypebeast in history, probably the richest hypebeast. like, to the point where the economy fuckin crashed lol<p>
     `, 
+  }
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
