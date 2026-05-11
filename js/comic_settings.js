@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 73; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 74; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -774,11 +774,18 @@ const pgData = [
     altText: "Dark Mode",
     imageFiles: 1,
     authorNotes: `
-    <p>Thought it would be nice to switch it up with today's comic in case the blaring white background is a little too much.
-
-<p>
+    <p>Thought it would be nice to switch it up with today's comic in case the blaring white background is a little too much.<p>
     `,
- }   
+ },   
+ {
+    pgNum: 74,
+    title: `History Essentially - Mansa Musa (1325 CE)`,
+    date: writeDate(2026, 5, 11),
+    altText: "History Essentially - Mansa Musa (1325 CE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>nuts how mansa musa was technically the first hypebeast in history, probably the richest hypebeast. like, to the point where the economy fuckin crashed lol<p>
+    `, 
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
