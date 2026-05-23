@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 74; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 75; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -785,6 +785,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>nuts how mansa musa was technically the first hypebeast in history, probably the richest hypebeast. like, to the point where the economy fuckin crashed lol<p>
+    `, 
+ },   
+ {
+    pgNum: 75,
+    title: `Jessica Nakamura & Pals - Personal Censor Bar`,
+    date: writeDate(2026, 5, 23),
+    altText: "Jessica Nakamura & Pals - Personal Censor Bar",
+    imageFiles: 1,
+    authorNotes: `
+    <p>Jess is just such a gremlin sometimes. She swears herself (you’ve just never seen it), yet she gets this censor bar just to be… well, a gremlin.<p>
     `, 
   }
 ];
