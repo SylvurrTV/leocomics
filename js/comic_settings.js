@@ -796,7 +796,7 @@ const pgData = [
     authorNotes: `
     <p>Jess is just such a gremlin sometimes. She swears herself (you’ve just never seen it), yet she gets this censor bar just to be… well, a gremlin.<p>
     `, 
-  }
+ }
 ];
 
 //below is a function you dont rly need to mess with but if you're more experienced with js you can
