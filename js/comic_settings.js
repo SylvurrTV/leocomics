@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 75; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 76; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -795,6 +795,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>Jess is just such a gremlin sometimes. She swears herself (you’ve just never seen it), yet she gets this censor bar just to be… well, a gremlin.<p>
+    `, 
+ },   
+ {
+    pgNum: 76,
+    title: `The Invention of Estradiol`,
+    date: writeDate(2026, 5, 31),
+    altText: "The Invention of Estradiol",
+    imageFiles: 1,
+    authorNotes: `
+    <p>I've not taken any myself, but I reckon estro doesn't work this quick. Maybe back in the day, it used to ¯\_(ツ)_/¯ Also, I know it isn't technically pride month yet... but it's never too early for pride month art hehe :3<p>
     `, 
  }
 ];
