@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 76; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 77; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -805,6 +805,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>I've not taken any myself, but I reckon estro doesn't work this quick. Maybe back in the day, it used to ¯\_(ツ)_/¯ Also, I know it isn't technically pride month yet... but it's never too early for pride month art hehe :3<p>
+    `, 
+ },   
+ {
+    pgNum: 77,
+    title: `Not super in the pride mood this month :(`,
+    date: writeDate(2026, 6, 10),
+    altText: "Not super in the pride mood this month :(",
+    imageFiles: 1,
+    authorNotes: `
+    <p>I was thinking about this at like 3am last night, and I was a tad nervous to post this one, but I just want to get it off my chest.<p>
     `, 
  }
 ];
