@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 77; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 78; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -815,6 +815,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>I was thinking about this at like 3am last night, and I was a tad nervous to post this one, but I just want to get it off my chest.<p>
+    `, 
+ },   
+ {
+    pgNum: 78,
+    title: `Jessica Nakamura & Pals - Pride Month`,
+    date: writeDate(2026, 6, 13),
+    altText: "Jessica Nakamura & Pals - Pride Month",
+    imageFiles: 1,
+    authorNotes: `
+    <p>lest we forget, Jess is a huge lesbian :33 and as well, dani is a trans girly, and lee is a femboy. interestingly, kiki is the only non-LGBTQ person amongst this friend group at the cafe. but hey, kiki's an ally for sure, even if her ways of expressing that are... unique owo<p>
     `, 
  }
 ];
