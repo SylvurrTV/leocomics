@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 78; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 79; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -825,6 +825,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>lest we forget, Jess is a huge lesbian :33 and as well, dani is a trans girly, and lee is a femboy. interestingly, kiki is the only non-LGBTQ person amongst this friend group at the cafe. but hey, kiki's an ally for sure, even if her ways of expressing that are... unique owo<p>
+    `, 
+ },   
+ {
+    pgNum: 79,
+    title: `Here We Go Again! - Juniper's Childhood`,
+    date: writeDate(2026, 6, 28),
+    altText: "Here We Go Again! - Juniper's Childhood",
+    imageFiles: 1,
+    authorNotes: `
+    <p>You know, I reckon it's because of the Romans that PMQs exist in the UK. I mean, politicians in those days were viewed like celebrities since many debates were out in the open.<p>
     `, 
  }
 ];
