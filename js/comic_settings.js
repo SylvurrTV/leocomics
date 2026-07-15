@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 79; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 80; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -835,6 +835,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>You know, I reckon it's because of the Romans that PMQs exist in the UK. I mean, politicians in those days were viewed like celebrities since many debates were out in the open.<p>
+    `, 
+ },   
+ {
+    pgNum: 80,
+    title: `History Essentially - Chandragupta (303 BCE)`,
+    date: writeDate(2026, 7, 15),
+    altText: "History Essentially - Chandragupta (303 BCE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>If you've ever wronged someone, make up for it by giving them a shit load of elephants. They'll forget all about it, I'm sure ^_^<p>
     `, 
  }
 ];
