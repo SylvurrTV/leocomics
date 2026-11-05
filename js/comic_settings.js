@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 83; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 85; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -875,6 +875,26 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>ngl... I think this time I've stretched the definition of history here... eh, I mean, I guess they're using a sun-dial, soooooo idk<p>
+    `, 
+ },   
+ {
+    pgNum: 84,
+    title: `Liashortnose comic but she forgot to add the punchline`,
+    date: writeDate(2026, 11, 3),
+    altText: "Liashortnose comic but she forgot to add the punchline",
+    imageFiles: 1,
+    authorNotes: `
+    <p>It’s that time of year again where I make a shit load of comics throughout November for reasons I can’t figure out ;w;<p>
+    `, 
+ },   
+ {
+    pgNum: 85,
+    title: `History Essentially - Gunpowder Plot (1605)`,
+    date: writeDate(2026, 11, 5),
+    altText: "History Essentially - Gunpowder Plot (1605)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>There’s an irony in setting off fireworks to celebrate a man failing to explode parliament<p>
     `, 
  }
 ];
