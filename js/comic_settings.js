@@ -906,6 +906,16 @@ const pgData = [
     authorNotes: `
     <p>This is based off a genuine thing my dad and brothers once said. They were saying evolution wasn’t real because the monkeys in our local zoo would’ve evolved by now 😭 I don’t think they think this now, but still lmfaoo<p>
     `, 
+ },   
+ {
+    pgNum: 87,
+    title: `History Essentially - First Punic War (250 BCE)`,
+    date: writeDate(2026, 11, 13),
+    altText: "History Essentially - First Punic War (250 BCE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>At least Consul Regulus didn't back out of the deal, even if that meant he got tortured to death. What a guy<p>
+    `, 
  }
 ];
 
