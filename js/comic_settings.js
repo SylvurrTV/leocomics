@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 86; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 88; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -915,6 +915,16 @@ const pgData = [
     imageFiles: 1,
     authorNotes: `
     <p>At least Consul Regulus didn't back out of the deal, even if that meant he got tortured to death. What a guy<p>
+    `, 
+ },   
+ {
+    pgNum: 88,
+    title: `History Essentially - Second Punic War (218 BCE)`,
+    date: writeDate(2026, 11, 14),
+    altText: "History Essentially - Second Punic War (218 BCE)",
+    imageFiles: 1,
+    authorNotes: `
+    <p>No wonder Hannibal put himself at third in his top 3 generals, like, he really committed to the bit of this war, didn’t he? Crikey.<p>
     `, 
  }
 ];
