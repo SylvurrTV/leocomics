@@ -11,7 +11,7 @@ let pg = Number(findGetParameter("pg")); //make "pg" mean the current page numbe
 ////////////////////////
 
 //REALLY IMPORTANT ONES
-const maxpg = 90; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
+const maxpg = 91; //the current number of pages your comic has in total. this DOESNT necessarily mean number of IMAGE FILES as it doesn't count pages split into multiple files.
 //YOU MUST UPDATE THIS NUMBER EVERY TIME YOU ADD A NEW PAGE or else it wont display the most recent page
 
 // COMIC PAGE SETTINGS
@@ -941,10 +941,20 @@ const pgData = [
     pgNum: 90,
     title: `History Essentially - Laika (1957)`,
     date: writeDate(2026, 11, 21),
-    altText: "Laika (1957)",
+    altText: "History Essentially - Laika (1957)",
     imageFiles: 1,
     authorNotes: `
     <p>With this series being all about lampooning historical events and heightening the silly aspects of them, I think it’s important to remind ourselves of how genuinely tragic history can be, and since I’m not comfortable making one of these on either World War, Laika is the best example. Her story seemed so hopeful, with her being the first dog in space, until she tragically passed just 5 hours up there. Rest in peace, Laika, you were a stellar dog <3<p>
+    `, 
+ },   
+ {
+    pgNum: 91,
+    title: `DeviantArt Scammers`,
+    date: writeDate(2026, 11, 21),
+    altText: "DeviantArt Scammers",
+    imageFiles: 1,
+    authorNotes: `
+    <p>This has been affecting DeviantArt for years, and I really wish there was some way they could crack down on it more. Ah well... *sigh*<p>
     `, 
  }
 ];
